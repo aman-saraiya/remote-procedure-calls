@@ -1,0 +1,44 @@
+/*
+ * Service Definition for UserService
+ */
+syntax = "proto3";
+
+package userservice;
+option go_package = "generated/userservice";
+
+// User represents a user with an id, name, and email
+message User {
+  int32 id = 1;      
+  string email = 2;   
+  string name = 3;
+}
+
+// Request argument for AddUser RPC
+message AddUserArg {
+  string email = 1;
+  string name = 2;
+}
+
+// Response returned by AddUser RPC
+message AddUserRet {
+  int32 id = 1;
+}
+
+// Request argument for GetUser RPC
+message GetUserArg {
+  int32 id = 1;
+}
+
+// Response returned by GetUser RPC
+message GetUserRet {
+  User user = 1;
+}
+
+// RPC service definition
+service UserService {
+  // AddUser RPC definition
+  rpc AddUser (AddUserArg) returns (AddUserRet);
+
+  // GetUser RPC definition
+  rpc GetUser (GetUserArg) returns (GetUserRet);
+}

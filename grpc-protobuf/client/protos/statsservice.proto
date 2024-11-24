@@ -1,0 +1,49 @@
+/*
+ * Service Definition for StatsService
+ */
+syntax = "proto3";
+
+package statsservice;
+option go_package="generated/statsservice";
+
+// Request argument for GetStats RPC
+message GetStatsArg {
+  repeated double numbers = 1;
+}
+
+// Response returned by GetStats RPC
+message GetStatsRet {
+  double mean = 1;
+  double median = 2;
+}
+
+// Request argument for RunningStats RPC.
+// NOTE: RunningStats is a bi-directional streaming RPC.
+// Multiple RunningStatsArg can be sent as part of a 
+// single RPC request. (Client Side Streaming)
+message RunningStatsArg {
+  // A single number, sent during the bidirectional stream
+  double number = 1;
+}
+
+
+// Response returned for RunningStats RPC
+// Multiple RunningStatsRet could be returned by the
+// server as part of a single RPC request. (Server Side Streaming)
+message RunningStatsRet {
+  // Running mean of the numbers received so far
+  double mean = 1;
+
+  // Running median of the numbers received so far
+  double median = 2;  
+}
+
+// The StatsService defines the two RPCs
+service StatsService {
+  // Unary RPC to get statistics (mean, median) for a list of numbers
+  rpc GetStats(GetStatsArg) returns (GetStatsRet);
+
+  // Bidirectional Streaming RPC to get a stream of numbers 
+  // and return running statistics back
+  rpc RunningStats(stream RunningStatsArg) returns (stream RunningStatsRet);
+}
