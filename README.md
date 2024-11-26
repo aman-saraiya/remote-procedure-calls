@@ -4,8 +4,8 @@ This repository serves as a hands-on exploration of different RPC (Remote Proced
 
 This repository contains the source code for the implementations discussed in the following articles:
 
-- [**gRPC is not the only RPC framework: Exploring Remote Procedure Calls**](#link-to-article-1)
-- [**A Deep Dive into gRPC: Service Definitions, Protobufs, and Hands-On Implementation**](#link-to-article-2)
+- [**gRPC is not the only RPC framework: Exploring Remote Procedure Calls**](https://medium.com/@aman-saraiya/grpc-is-not-the-only-rpc-framework-exploring-remote-procedure-calls-1ba90f9adb0c)
+- [**A Deep Dive into gRPC: Service Definitions, Protobufs, and Hands-On Implementation**](https://medium.com/@aman-saraiya/a-deep-dive-into-grpc-service-definitions-protobufs-and-hands-on-implementation-777946d733ca)
 
 ## Repository Structure
 

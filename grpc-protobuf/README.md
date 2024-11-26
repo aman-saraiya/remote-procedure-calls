@@ -1,5 +1,7 @@
 # gRPC with Protobuf Go Implementation
 
+Link to Medium Article: [**A Deep Dive into gRPC: Service Definitions, Protobufs, and Hands-On Implementation**](https://medium.com/@aman-saraiya/a-deep-dive-into-grpc-service-definitions-protobufs-and-hands-on-implementation-777946d733ca)
+
 This directory contains an implementation of gRPC services using Protocol Buffers (Protobuf) for service definitions, message serialization, and communication in Go. It demonstrates how to set up gRPC with Protobuf and includes both pre-built binaries and instructions to build the code from source.
 
 ## Directory Structure

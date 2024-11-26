@@ -1,6 +1,6 @@
 # RPC Standard Go Implementation
 
-Link to Medium Article: [**gRPC is not the only RPC framework: Exploring Remote Procedure Calls**](#link-to-article-1)
+Link to Medium Article: [**gRPC is not the only RPC framework: Exploring Remote Procedure Calls**](https://medium.com/@aman-saraiya/grpc-is-not-the-only-rpc-framework-exploring-remote-procedure-calls-1ba90f9adb0c)
 
 This directory contains a simple implementation of standard RPC in Go. It demonstrates basic concepts of RPC, including how to create a server and a client that communicate using Go's built-in `net/rpc` package.
 
