@@ -16,7 +16,7 @@ This repository is organized into two main directories:
 
 ## Requirements
 
-To run the code in this repository, you need to have **Go 1.23.3** installed on your local machine. You can find instructions on how to install Go [here](#link-to-go-installation-guide).
+To run the code in this repository, you need to have **Go 1.23.3** installed on your local machine. You can find instructions on how to install Go [here](https://go.dev/doc/install).
 
 Each directory (`rpc-go-standard/` and `grpc-protobuf/`) will further have specific setup instructions and dependencies, which will be provided in their respective `README` files.
 
